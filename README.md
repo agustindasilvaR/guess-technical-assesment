@@ -1,6 +1,6 @@
 ## 1. Examples
 
-This section contains individual examples for each of the 5 requested modules. Each module is demonstrated in its own HTML file—including all the variant(s) you created—and is stored in the examples directory.
+This section contains individual examples for each of the 5 requested modules. Each module is demonstrated in its own HTML file—including all the variant(s) created—and is stored in the examples directory.
 
 - examples/drawer.html – Contains the drawer module examples (e.g., left-to-right and right-to-left variants and distinct colour)
 - examples/button.html – Shows the button module with its various style options (filled, and outline)
