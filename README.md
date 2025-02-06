@@ -20,4 +20,4 @@ Key points about the Demo:
   -  **Additional Functionality**: The demo includes extra JavaScript features (e.g., navigation interactions, dynamic content differentiation, modal interactions) that illustrate how these components work together.
   -  **File Location**: The Demo HTML file is placed at the root of the repository **index.html** so that it’s easily accessible and can be opened directly in a browser.
 
-Also, you check this demo in your browser by clicking (https://agustindasilvar.github.io/guess-technical-assesment/index.html)[here]
+Also, you check this demo in your browser by clicking [here](https://agustindasilvar.github.io/guess-technical-assesment/index.html).
