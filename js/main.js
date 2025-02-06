@@ -5,9 +5,9 @@
         const subElement = document.getElementById("dynamicSubtitle");
     
         const translationsTitle = {
-        en: "Analog in Rome",
-        es: "Analógico en Roma",
-        it: "Analogico a Roma"
+        en: "Rome in Analog",
+        es: "Roma en analógicas",
+        it: "Roma in analogica"
         };
 
         const translationsSubtitle = {
