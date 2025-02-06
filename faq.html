@@ -1,70 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/modules/faq.css">
-    <link rel="stylesheet" href="css/modules/drawer.css">
-    <link rel="stylesheet" href="css/modules/button.css">
-    <link rel="stylesheet" href="css/modules/header.css">
-    <title>Document</title>
-</head>
-<body>
-
-    <img src="./assets/icons8-menu.svg" id="openDrawer" class="menu__alt" alt="Menu Icon"/>
-
-    <!-- Header -->
-
-    <div class="header">
-        <h1>frequently asked questions (FAQ) </h1>
-        <p>everyone has questions, do not miss your chance to ask them!</p>
-    </div>
-
-
-
-    <!-- Drawer -->
-
-    <div class="overlay"></div>
-
-    <div id="drawer" class="drawer">
-      <button id="closeDrawer">&times;</button>
-      <a href="index.html">home</a>
-      <a href="index.html">gallery</a>
-      <a href="faq.html">faq</a>
-    </div>
-
-    <!-- FAQ -->
-    <section class="faq">
-        <div class="faq__item">
-          <button class="faq__question"><b>what equipment did you use for this trip?</b></button>
-          <div class="faq__answer">
-            <p>
-                As always, I use my <b>Yashica MG-1</b> paired with the <b>KODAK Gold 200</b> film. Some photos might have been taken using <b>KODAK ColorPlus</b> film.
-            </p>
-          </div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/faq.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/modules/accordion.css">
+        <link rel="stylesheet" href="css/modules/drawer.css">
+        <link rel="stylesheet" href="css/modules/button.css">
+        <link rel="stylesheet" href="css/modules/header.css">
+        <link rel="stylesheet" href="css/modules/modal.css">
+        <link rel="stylesheet" href="css/modules/input.css">
+        <title>FAQ</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>FAQ</h1>
+            <p>Everyone has questions, do not miss your chance to ask yours!</p>
         </div>
-        <div class="faq__item">
-          <button class="faq__question"><b>when were these photos taken?</b></button>
-          <div class="faq__answer">
-            <p>Around the <b>first two weeks of November 2024.</b></p>
-          </div>
+
+        <img src="./assets/burger-menu-left-svgrepo-com(1).svg" id="drawerMenuOpen" alt="Menu Icon"/>
+
+        <div class="overlay"></div>
+
+        <div id="drawer" class="drawer color-green drawer--left">
+          <button id="closeDrawer">&times;</button>
+          <a href="index.html">HOME</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="faq.html">FAQ</a>
         </div>
-        <div class="faq__item">
-            <button class="faq__question"><b>can we expect more exhibitions like these for other cities?</b></button>
-            <div class="faq__answer">
-              <p><b>Yes!</b> Actually, you should expect two more exhibitions during 2025: <b>Paris, and A Coruña</b>.</p>
+
+        <section class="accordion">
+            <div class="accordion__item">
+              <button class="accordion__question"><b>What equipment did you use for this trip?</b></button>
+              <div class="accordion__answer">
+                <p>
+                    As always, I use my <b>Yashica MG-1</b> paired with the <b>KODAK Gold 200</b> film. Some photos might have been taken using <b>KODAK ColorPlus</b> film.
+                </p>
+              </div>
             </div>
-        </div>
-      </section>
+            <div class="accordion__item">
+              <button class="accordion__question"><b>When were these photos taken?</b></button>
+              <div class="accordion__answer">
+                <p>Around the <b>first two weeks of November 2024.</b></p>
+              </div>
+            </div>
+            <div class="accordion__item">
+                <button class="accordion__question"><b>Can we expect more exhibitions like these for other cities?</b></button>
+                <div class="accordion__answer">
+                  <p><b>Yes!</b> Actually, you should expect two more exhibitions during 2025: <b>Paris, and A Coruña</b>.</p>
+                </div>
+            </div>
+          </section>
 
-      <!-- Button footer? -->
-      <div id="bottom">
-        <h3>Your question is not listed here?</h3>
-        <input type="button" class="button__filled" value="submit your own question"/>
-      </div>
+          <div id="bottom">
+            <h3>Your question is not listed here?</h3>
+            <input type="button" id="openModal" class="button__filled" value="Submit your own question"/>
+          </div>
 
-  <script src="js/modules/faq.js"></script>
-  <script src="js/modules/drawer.js"></script>
-</body>
-</html>
+          <div id="modal" class="modal">
+            <div class="modal__content">
+              <h2 class="modal__title">Submit your own question</h2>
+              <div class="modal__body">
+
+                <button class="modal__close" id="closeModal">&times;</button>
+
+                <div class="form">
+
+                  <div class="input-module input-module--outline">
+                    <input type="text" id="name" placeholder="Name">
+                  </div>
+                  <div class="input-module input-module--outline">
+                    <input type="email" id="mail" placeholder="Email">
+                  </div>
+                  <input type="submit" id="sendForm" class="button__filled" value="Send"/>
+
+                </div>
+
+              </div>
+          </div>
+
+
+      <script src="js/modules/accordion.js"></script>
+      <script src="js/modules/drawer.js"></script>
+      <script src="js/modules/modal.js"></script>
+      <script src="js/faq.js"></script>
+    </body>
+    </html>

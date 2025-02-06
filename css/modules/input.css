@@ -1,0 +1,30 @@
+    .input-module input {
+        font-size: 1rem;
+        padding: 8px;
+        width: 100%;
+        outline: none;
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    
+    .input-module--flushed input {
+        border: none;
+        border-bottom: 2px solid #ccc;
+        border-radius: 0; 
+    }
+    
+    .input-module--flushed input:focus {
+        border-bottom-color: #007BFF; 
+    }
+    
+    .input-module--outline input {
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        padding: 8px;
+    }
+    
+    .input-module--outline input:focus {
+        border-color: #007BFF;
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+    }
+    
+    

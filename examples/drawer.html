@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawer example</title>
+    <link rel="stylesheet" href="../css/modules/drawer.css">
+    <link rel="stylesheet" href="../css/modules/button.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+
+<div class="example">
+
+    <h1>Drawer</h1>
+    <button class="button__outline" id="openDrawer">Click to open drawer (left and default colour)</button>
+    <button class="button__filled" id="openDrawerRight">Click to open drawer (right and green colour)</button>
+
+    <div id="drawer" class="drawer drawer--left">
+        <button id="closeDrawer">&times;</button>
+        <p>Drawer content coming from the left and default colour.</p>
+    </div>
+  
+
+  <div id="drawerRight" class="drawer drawer--right color-green">
+    <button id="closeDrawerRight">&times;</button>
+    <a>Drawer content coming from the right and green colour.</a>
+  </div>
+
+</div>
+  
+
+</body>
+<script src="../js/modules/drawer.js"></script>
+</html>

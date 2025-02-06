@@ -1,0 +1,44 @@
+@media (min-width: 600px) {
+  .header {
+    padding: 40px 20px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; 
+  }
+
+
+  .drawer {
+    width: 300px;
+  }
+  
+  .modal__content {
+    max-width: 600px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  body {
+    padding: 20px;
+  }
+}
+
+#bottom {
+  bottom: 0;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff; 
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 10px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}

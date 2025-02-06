@@ -1,31 +1,35 @@
-// drawer.js
-document.addEventListener("DOMContentLoaded", () => {
-    const drawer = document.getElementById("drawer");
-    const closeButton = document.getElementById("closeDrawer");
-    const menu = document.getElementById("openDrawer");
-    const menuAlt = document.getElementById("openDrawer-alt");
-    const overlay = document.getElementById(".overlay")
-  
-    // Define la dirección del drawer ("left" o "top")
-    let drawerDirection = "left"; // Cambia a "top" si se desea
-  
-    // Asigna la clase de dirección al drawer
-    drawer.classList.add(drawerDirection);
-  
-    // Función para abrir el drawer
-    function openDrawer() {
-      drawer.classList.add("open");
-      overlay.classList.add("active");
-    }
-  
-    // Función para cerrar el drawer
-    function closeDrawer() {
-      drawer.classList.remove("open");
-    }
-  
-    // Eventos de apertura y cierre
+  document.addEventListener("DOMContentLoaded", () => {
 
-    menu.addEventListener("click", openDrawer);    
-    closeButton.addEventListener("click", closeDrawer);
+    const leftDrawer = document.querySelector(".drawer--left");
+    const closeLeftBtn = document.getElementById("closeDrawer");
+    const openLeftBtn = document.getElementById("openDrawer");
+    const openLeftMenu = document.getElementById("drawerMenuOpen");
+
+
+    function openLeftDrawer() {
+      leftDrawer.classList.add("open");
+    }
+
+    function closeLeftDrawer() {
+      leftDrawer.classList.remove("open");
+    }
+
+    if (openLeftBtn) openLeftBtn.addEventListener("click", openLeftDrawer);
+    if (openLeftMenu) openLeftMenu.addEventListener("click", openLeftDrawer);
+    closeLeftBtn.addEventListener("click", closeLeftDrawer);
+
+    const rightDrawer = document.querySelector(".drawer--right");
+    const closeRightBtn = document.getElementById("closeDrawerRight");
+    const openRightBtn = document.getElementById("openDrawerRight");
+
+    function openRightDrawer() {
+      rightDrawer.classList.add("open");
+    }
+
+    function closeRightDrawer() {
+      rightDrawer.classList.remove("open");
+    }
+
+    if (openRightBtn) openRightBtn.addEventListener("click", openRightDrawer);
+    closeRightBtn.addEventListener("click", closeRightDrawer);
   });
-  

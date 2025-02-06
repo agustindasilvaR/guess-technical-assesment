@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider example</title>
+    <link rel="stylesheet" href="../css/modules/slider.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <div class="example">
+    <h1>Hero</h1>
+
+    <section class="hero">
+      <div class="hero__slider">
+        <div class="hero__slides">
+          <div class="hero__slide active" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/1234.JPG');"></div>
+          <div class="hero__slide" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/67896789.JPG');"></div>
+          <div class="hero__slide" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/134252345.JPG');"></div>
+        </div>
+        <div class="hero__header">
+          <h2 class="hero__title" id="dynamicText">Sample text</h2>
+          <p class="hero__subtitle" id="dynamicSubtitle">Sample subtitle</p>
+        </div>
+      </div>
+      <div class="hero__dots">
+        <span class="hero__dot active" data-index="0"></span>
+        <span class="hero__dot" data-index="1"></span>
+        <span class="hero__dot" data-index="2"></span>
+      </div>
+    </section>
+  </div>
+<script src="../js/modules/slider.js"></script>
+</body>
+</html>

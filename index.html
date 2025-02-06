@@ -1,60 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Estilos globales y base -->
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- Estilos de módulos -->
-  <link rel="stylesheet" href="css/modules/slider.css">
-  <link rel="stylesheet" href="css/modules/drawer.css">
-  <link rel="stylesheet" href="css/modules/button.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <title>Analog in Rome</title>
-</head>
-<body>
-  <div id="home">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modules/slider.css">
+    <link rel="stylesheet" href="css/modules/drawer.css">
+    <link rel="stylesheet" href="css/modules/button.css">
+    <title>Home</title>
+  </head>
+  <body>
+    <div id="home">
 
-    <!-- Drawer module -->
-    <img src="./assets/icons8-menu.svg" id="openDrawer" alt="Menu Icon"/>
+      <div id="drawer" class="drawer color-green drawer--left">
+        <button id="closeDrawer">&times;</button>
+        <select id="selectLanguage">
+          <option value="en">ENGLISH</option>
+          <option value="es">ESPAÑOL</option>
+          <option value="it">ITALIANO</option>
+        </select>
+        <a href="index.html">HOME</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="faq.html">FAQ</a>
+      </div>
 
-    <div class="overlay"></div>
+      <section class="hero">
+        <img src="./assets/burger-menu-left-svgrepo-com(1).svg" id="drawerMenuOpen" alt="Menu Icon"/>
+        <div class="hero__slider">
+          <div class="hero__slides">
+            <div class="hero__slide active" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/1.JPG');"></div>
+            <div class="hero__slide" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/14.JPG');"></div>
+            <div class="hero__slide" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/5.JPG');"></div>
+          </div>
+          <div class="hero__header">
+            <h2 class="hero__title" id="dynamicText">Analog in Rome</h2>
+            <p class="hero__subtitle" id="dynamicSubtitle"> discover the current world, through an old lens.</p>
+          </div>
+        </div>
+        <div class="hero__dots">
+          <span class="hero__dot active" data-index="0"></span>
+          <span class="hero__dot" data-index="1"></span>
+          <span class="hero__dot" data-index="2"></span>
+        </div>
+      </section>
 
-    <div id="drawer" class="drawer">
-      <button id="closeDrawer">&times;</button>
-      <a href="index.html">home</a>
-      <a href="index.html">gallery</a>
-      <a href="faq.html">faq</a>
+      <div class="button__section">
+        <input onclick="location.href = 'gallery.html'" type="button" value="EXPLORE" class="button__outline"/>
+      </div>
     </div>
 
-    <!-- Hero module -->
-    <section class="hero">
-      <div class="hero__slider">
-        <div class="hero__slides">
-          <div class="hero__slide active" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/1.JPG');"></div>
-          <div class="hero__slide" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/14.JPG');"></div>
-          <div class="hero__slide" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/5.JPG');"></div>
-        </div>
-        <div class="hero__header">
-          <h2 class="hero__title">Analog in Rome</h2>
-          <p class="hero__subtitle"> discover the current world, through an old lens.</p>
-        </div>
-      </div>
-      <div class="hero__dots">
-        <span class="hero__dot active" data-index="0"></span>
-        <span class="hero__dot" data-index="1"></span>
-        <span class="hero__dot" data-index="2"></span>
-      </div>
-    </section>
-
-    <!-- Button (outline) -->
-    <div class="button__section">
-      <input type="button" value="explore" class="button__outline"/>
-    </div>
-  </div>
-
-  <script src="js/main.js"></script>
-  <script src="js/modules/slider.js"></script>
-  <script src="js/modules/drawer.js"></script>
-</body>
-</html>
+    <script src="js/main.js"></script>
+    <script src="js/modules/slider.js"></script>
+    <script src="js/modules/drawer.js"></script>
+  </body>
+  </html>

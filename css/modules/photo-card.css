@@ -1,0 +1,61 @@
+    .photo-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    animation: fade-in 1.5s;
+    cursor: pointer;
+    }
+
+    .photo-card__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+
+    .photo-card__content {
+    padding: 10px;
+    }
+
+    .photo-card__title {
+    margin: 0 0 5px;
+    font-size: 1.2rem;
+    }
+
+    .photo-card__description {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #555;
+    }
+
+    .photo-card--vertical {
+    width: 80%;
+    }
+
+
+    .photo-card--vertical .photo-card__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    }
+
+    .photo-card--horizontal {
+    display: flex;
+    width: 500px;
+    }
+
+    .photo-card--horizontal .photo-card__image {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    }
+
+    .photo-card--horizontal .photo-card__content {
+    width: 60%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }

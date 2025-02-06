@@ -1,0 +1,117 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/modules/photo-card.css">
+        <link rel="stylesheet" href="css/pages/gallery.css">
+        <link rel="stylesheet" href="css/modules/modal.css">
+        <link rel="stylesheet" href="css/modules/header.css">
+        <link rel="stylesheet" href="css/modules/drawer.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Gallery</title>
+    </head>
+    <body>
+
+
+        <!-- Header -->
+
+        <div class="header">
+            <h1>Gallery</h1>
+            <p>Feel free to take a look!</p>
+        </div>
+
+
+
+        <!-- Drawer -->
+        <img src="./assets/burger-menu-left-svgrepo-com(1).svg" id="drawerMenuOpen" alt="Menu Icon"/>
+
+        <div class="overlay"></div>
+
+        <div id="drawer" class="drawer color-green drawer--left">
+        <button id="closeDrawer">&times;</button>
+        <a href="index.html">HOME</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="faq.html">FAQ</a>
+        </div>
+
+        <section class="gallery">
+
+            <div class="photo-card photo-card--vertical">
+            <img src="assets/3.JPG" alt="Descripción 1" class="photo-card__image">
+            <div class="photo-card__content">
+                <h3 class="photo-card__title">Colloseo</h3>
+                <p class="photo-card__description">Iconic ancient Roman amphitheater evoking epic battles and spectacles.</p>
+            </div>
+            </div>
+        
+            <div class="photo-card photo-card--vertical">
+            <img src="assets/23.JPG" alt="Descripción 2" class="photo-card__image">
+            <div class="photo-card__content">
+                <h3 class="photo-card__title">Porta Pia</h3>
+                <p class="photo-card__description">Historic fortified gate marking the threshold between imperial legacy and modern Rome.</p>
+            </div>
+            </div>
+        
+            <div class="photo-card photo-card--vertical">
+            <img src="assets/1.JPG" alt="Descripción 3" class="photo-card__image">
+            <div class="photo-card__content">
+                <h3 class="photo-card__title">Metro Di Roma</h3>
+                <p class="photo-card__description">A modern underground network linking vibrant urban life with ancient heritage.</p>
+            </div>
+            </div>
+        
+            <div class="photo-card photo-card--vertical">
+            <img src="assets/7.JPG" alt="Descripción 4" class="photo-card__image">
+            <div class="photo-card__content">
+                <h3 class="photo-card__title">Head office of Ferrovie dello Stato Italiane in Rome</h3>
+                <p class="photo-card__description">An emblematic administrative hub symbolizing Italy’s tradition and efficiency in rail transport.</p>
+            </div>
+            </div>
+
+            <div class="photo-card photo-card--vertical">
+                <img src="assets/1345125.JPG" alt="Descripción 4" class="photo-card__image">
+                <div class="photo-card__content">
+                <h3 class="photo-card__title">Musei Vaticani</h3>
+                <p class="photo-card__description">A vast repository of sacred art and culture housing treasures of immense historical and artistic value.</p>
+                </div>
+            </div>
+
+            <div class="photo-card photo-card--vertical">
+                <img src="assets/1234.JPG" alt="Descripción 4" class="photo-card__image">
+                <div class="photo-card__content">
+                <h3 class="photo-card__title">Near Monumento Nazionale</h3>
+                <p class="photo-card__description">Areas where monumental history meets the vibrant everyday life of Rome.</p>
+                </div>
+            </div>
+
+            <div class="photo-card photo-card--vertical">
+                <img src="assets/8678.JPG" alt="Descripción 4" class="photo-card__image">
+                <div class="photo-card__content">
+                <h3 class="photo-card__title">Inside Musei Vaticani</h3>
+                <p class="photo-card__description">A labyrinthine gallery filled with masterpieces that narrate centuries of faith and creativity.</p>
+                </div>
+            </div>
+
+            <div class="photo-card photo-card--vertical">
+                <img src="assets/67896789.JPG" alt="Descripción 4" class="photo-card__image">
+                <div class="photo-card__content">
+                <h3 class="photo-card__title">Inside Musei Vaticani II</h3>
+                <p class="photo-card__description">Sacred spaces that dazzle with a blend of solemnity, Renaissance art, and historical splendor.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <div id="modal" class="modal">
+            <div class="modal__content">
+            <button class="modal__close" id="closeModal">&times;</button>
+            <img src="" alt="Modal Image" class="modal__image">
+            </div>
+        </div>
+        
+
+        <script src="js/modules/photo-card.js"></script>
+        <script src="js/modules/drawer.js"></script>        
+    </body>
+    </html>

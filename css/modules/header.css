@@ -1,16 +1,27 @@
-.header {
-    margin-top: 100px;
-    margin-bottom: 80px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 90%;
-    border-radius: 25px;
-}
+    @keyframes fade-in {
+        from {
+        opacity: 0;
+        }
+        to {
+        opacity: 1;
+        }
+    }
 
-h1 {
-    color: rgb(15, 66, 51);
-    text-decoration: underline;
-}
+    .header {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        border-radius: 25px;
+        text-align: center;
+        animation: fade-in 1.0s;
+    }
+
+    h1 {
+        color: rgb(15, 66, 51);
+        text-decoration: underline;
+    }
